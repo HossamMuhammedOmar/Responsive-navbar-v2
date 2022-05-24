@@ -32,6 +32,9 @@ nav {
   height: 100vh;
   background: #1d2226;
   width: 66%;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 0.2s;
 }
 
 .exit {
@@ -70,6 +73,8 @@ li a:hover {
 
 .active-nav {
   visibility: unset;
+  transform: translateX(0);
+  opacity: 1;
 }
 
 @media (min-width: 550px) {
@@ -84,6 +89,8 @@ li a:hover {
     margin-top: 0;
     visibility: unset;
     background: none;
+    transform: translateX(0);
+    opacity: 1;
   }
 
   .nav-item {
